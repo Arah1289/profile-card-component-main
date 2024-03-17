@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27,161,173);
+    overflow: hidden;
+    font-family: "Kumbh Sans", open-sans;
+    margin: 0;
+    padding: 0;
+}
+.bg-pattern-top {
+    position: absolute;
+    top: -600px;
+    left: -400px;
+}
+.bg-pattern-bottom {
+    position: absolute;
+    bottom: -600px;
+    right: -400px;
+}
+.card {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 15px;
+}
+.back img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card .person {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card .person img {
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #ffff;
+    transform: translateY(-50%);
+}
+.person .info {
+    position: absolute;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.person .info > p {
+    font-size: 18px;
+    font-weight: 700;
+}
+span {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.person .info > span {
+    position: absolute;
+    margin-top: 50px;
+}
+.card .content > .info::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 0%, 59%);
+}
+.card .content > .info {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card .content > .info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+}
